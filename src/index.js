@@ -1,11 +1,23 @@
+// Import React
 import React from "react";
+
+// Import ReactDOM
 import ReactDOM from "react-dom";
+
+// Import App
 import App from "./App";
+
+// Import Webvitals
 import reportWebVitals from "./reportWebVitals";
+
+// Import React Router
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
 	</React.StrictMode>,
 	document.getElementById("root")
 );

@@ -1,6 +1,9 @@
 // Import React
 import React from "react";
 
+// Import React Router
+import { NavLink } from "react-router-dom";
+
 // Styled Components
 import styled from "styled-components";
 
@@ -8,17 +11,19 @@ export const Nav = () => {
 	return (
 		<StyledNav>
 			<h1>
-				<a href="logo">Logo</a>
+				<NavLink to="/" id="logo">
+					Logo
+				</NavLink>
 			</h1>
 			<ul>
 				<li>
-					<a href="#">Over</a>
+					<NavLink to="/about">Over</NavLink>
 				</li>
 				<li>
-					<a href="#">Werk</a>
+					<NavLink to="/work">Werk</NavLink>
 				</li>
 				<li>
-					<a href="#">Contact</a>
+					<NavLink to="/contact">Contact</NavLink>
 				</li>
 			</ul>
 		</StyledNav>
