@@ -7,7 +7,7 @@ import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 
 // Import Images
-import home2 from "../img/home2.png";
+import homeSecondary from "../img/home-secondary.png";
 
 // Import Styled Component
 import styled from "styled-components";
@@ -51,7 +51,7 @@ export const ServicesSection = () => {
 				</StyledCards>
 			</StyledDescription>
 			<StyledImage>
-				<img src={home2} alt="camera" />
+				<img src={homeSecondary} alt="camera" />
 			</StyledImage>
 		</StyledServices>
 	);

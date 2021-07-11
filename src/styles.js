@@ -29,6 +29,6 @@ export const StyledImage = styled.div`
 	}
 `;
 
-export const Hide = styled.div`
+export const StyledHide = styled.div`
 	overflow: hidden;
 `;

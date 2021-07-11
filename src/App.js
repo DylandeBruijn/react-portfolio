@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import { About } from "./pages/About";
 import { Work } from "./pages/Work";
 import { Contact } from "./pages/Contact";
+import { ProjectDetail } from "./pages/ProjectDetail";
 
 // Global Style
 import { GlobalStyle } from "./components/GlobalStyle";
@@ -12,7 +13,7 @@ import { GlobalStyle } from "./components/GlobalStyle";
 // Components
 import { Nav } from "./components/Nav";
 
-function App() {
+export const App = () => {
 	return (
 		<div className="App">
 			<GlobalStyle />
@@ -24,12 +25,13 @@ function App() {
 				<Route path="/work" exact>
 					<Work />
 				</Route>
+				<Route path="/work/:id">
+					<ProjectDetail />
+				</Route>
 				<Route path="/contact" exact>
 					<Contact />
 				</Route>
 			</Switch>
 		</div>
 	);
-}
-
-export default App;
+};

@@ -5,27 +5,32 @@ import React from "react";
 import styled from "styled-components";
 
 // Import StyledComponents
-import { StyledSection, StyledDescription, StyledImage, Hide } from "../styles";
+import {
+	StyledSection,
+	StyledDescription,
+	StyledImage,
+	StyledHide,
+} from "../styles";
 
 // Images
-import home1 from "../img/home1.png";
+import homeMain from "../img/home-main.png";
 
 export const AboutSection = () => {
 	return (
 		<StyledSection>
 			<StyledDescription>
 				<div className="title">
-					<Hide>
+					<StyledHide>
 						<h2>Creatieve duizendpoot</h2>
-					</Hide>
-					<Hide>
+					</StyledHide>
+					<StyledHide>
 						<h2>
 							met <span>passie</span> voor
 						</h2>
-					</Hide>
-					<Hide>
+					</StyledHide>
+					<StyledHide>
 						<h2>de digitale wereld</h2>
-					</Hide>
+					</StyledHide>
 				</div>
 				<p>
 					Neem contact op om te informeren wat ik voor u of uw bedrijf kan
@@ -34,7 +39,7 @@ export const AboutSection = () => {
 				<button>Contact</button>
 			</StyledDescription>
 			<StyledImage>
-				<img src={home1} alt="guy with a camera" />
+				<img src={homeMain} alt="guy with a camera" />
 			</StyledImage>
 		</StyledSection>
 	);

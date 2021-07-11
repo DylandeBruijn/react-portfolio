@@ -5,7 +5,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 // Import App
-import App from "./App";
+import { App } from "./App";
 
 // Import Webvitals
 import reportWebVitals from "./reportWebVitals";
