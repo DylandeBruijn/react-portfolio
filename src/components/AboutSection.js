@@ -1,13 +1,14 @@
+// Import React
 import React from "react";
-
-// Images
-import home1 from "../img/home1.png";
 
 // Styled Components
 import styled from "styled-components";
 
 // Import StyledComponents
 import { StyledSection, StyledDescription, StyledImage, Hide } from "../styles";
+
+// Images
+import home1 from "../img/home1.png";
 
 export const AboutSection = () => {
 	return (
