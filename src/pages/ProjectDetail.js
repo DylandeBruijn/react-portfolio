@@ -38,9 +38,9 @@ export const ProjectDetail = () => {
 					/>
 				))}
 			</StyledFeatures>
-			<ImageDisplay>
+			<StyledImageDisplay>
 				<img src={project?.secondaryImg} alt="project" />
-			</ImageDisplay>
+			</StyledImageDisplay>
 		</StyledDetails>
 	);
 };
@@ -90,7 +90,7 @@ const StyledFeature = styled.div`
 	}
 `;
 
-const ImageDisplay = styled.div`
+const StyledImageDisplay = styled.div`
 	min-height: 50vh;
 	img {
 		width: 100%;
