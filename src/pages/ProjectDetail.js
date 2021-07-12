@@ -1,14 +1,18 @@
-// Import React
-import React, { useState, useEffect } from "react";
-
-// Import Styled Components
-import styled from "styled-components";
+// React
+import { useState, useEffect } from "react-dom";
 
 // React Router
 import { useHistory } from "react-router";
 
-// Import MovieState
+// Projects
 import { ProjectState } from "../projectState";
+
+// Styled Components
+import styled from "styled-components";
+
+// Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 export const ProjectDetail = () => {
 	const history = useHistory();
@@ -24,7 +28,12 @@ export const ProjectDetail = () => {
 		setProject(currentProject[0]);
 	}, [projects, url]);
 	return (
-		<StyledDetails>
+		<StyledDetails
+			variants={pageAnimation}
+			initial="hidden"
+			animate="show"
+			exit="exit"
+		>
 			<StyledHeadLine>
 				<h2>{project?.title}</h2>
 				<img src={project?.mainImg} alt="project" />
@@ -45,7 +54,7 @@ export const ProjectDetail = () => {
 	);
 };
 
-const StyledDetails = styled.div`
+const StyledDetails = styled(motion.div)`
 	color: white;
 `;
 

@@ -1,16 +1,13 @@
-// Import React
-import React from "react";
-
-// Styled Components
-import styled from "styled-components";
-
-// Import StyledComponents
+// UI
 import {
 	StyledSection,
 	StyledDescription,
 	StyledImage,
 	StyledHide,
 } from "../styles";
+
+// Framer Motion
+import { motion } from "framer-motion";
 
 // Images
 import homeMain from "../img/home-main.png";
@@ -19,19 +16,19 @@ export const AboutSection = () => {
 	return (
 		<StyledSection>
 			<StyledDescription>
-				<div className="title">
+				<motion.div>
 					<StyledHide>
-						<h2>Creatieve duizendpoot</h2>
+						<motion.h2>Creatieve duizendpoot</motion.h2>
 					</StyledHide>
 					<StyledHide>
-						<h2>
+						<motion.h2>
 							met <span>passie</span> voor
-						</h2>
+						</motion.h2>
 					</StyledHide>
 					<StyledHide>
-						<h2>de digitale wereld</h2>
+						<motion.h2>de digitale wereld</motion.h2>
 					</StyledHide>
-				</div>
+				</motion.div>
 				<p>
 					Neem contact op om te informeren wat ik voor u of uw bedrijf kan
 					betekenen!

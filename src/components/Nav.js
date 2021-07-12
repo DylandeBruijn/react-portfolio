@@ -1,7 +1,4 @@
-// Import React
-import React from "react";
-
-// Import React Router
+// React Router
 import { NavLink } from "react-router-dom";
 
 // Styled Components

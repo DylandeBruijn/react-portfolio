@@ -1,11 +1,12 @@
-// Import React
-import React from "react";
-
-// Import Styled Components
+// Styled Components
 import styled from "styled-components";
 
-// Import Link
+// React Router
 import { Link } from "react-router-dom";
+
+// Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 // Images
 import projectOneOverview from "../img/project-1-overview.png";
@@ -14,7 +15,13 @@ import projectThreeOverview from "../img/project-3-overview.png";
 
 export const Work = () => {
 	return (
-		<StyledWork>
+		<StyledWork
+			variants={pageAnimation}
+			initial="hidden"
+			animate="show"
+			exit="exit"
+			style={{ background: "#fff" }}
+		>
 			<StyledProject>
 				<h2>Project 1</h2>
 				<div className="line"></div>
@@ -40,7 +47,7 @@ export const Work = () => {
 	);
 };
 
-const StyledWork = styled.div`
+const StyledWork = styled(motion.div)`
 	min-height: 100vh;
 	overflow: hidden;
 	padding: 5rem 10rem;

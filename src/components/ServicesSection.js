@@ -1,18 +1,16 @@
-import React from "react";
-
-// Import Icons
+// Icons
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 
-// Import Images
+// Images
 import homeSecondary from "../img/home-secondary.png";
 
-// Import Styled Component
+// Styled Components
 import styled from "styled-components";
 
-// Import StyledComponents
+// UI
 import { StyledSection, StyledDescription, StyledImage } from "../styles";
 
 export const ServicesSection = () => {

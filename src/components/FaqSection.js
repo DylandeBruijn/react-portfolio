@@ -1,10 +1,7 @@
-// Import React
-import React from "react";
-
 // Styled Components
 import styled from "styled-components";
 
-// Import StyledComponents
+// UI
 import { StyledSection } from "../styles";
 
 export const FaqSection = () => {
