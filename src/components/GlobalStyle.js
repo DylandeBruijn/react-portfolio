@@ -12,6 +12,7 @@ body {
     background: #1b1b1b;
     font-family: 'Inter', sans-serif;
     margin-top: 10vh;
+    overflow-x: hidden;
 }
 
 button {
