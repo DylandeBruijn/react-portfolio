@@ -14,6 +14,9 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 
+// Scroll Top
+import { ScrollTop } from "../components/ScrollTop";
+
 export const ProjectDetail = () => {
 	const history = useHistory();
 	const url = history.location.pathname;
@@ -48,6 +51,7 @@ export const ProjectDetail = () => {
 			<StyledImageDisplay>
 				<img src={project?.secondaryImg} alt="project" />
 			</StyledImageDisplay>
+			<ScrollTop />
 		</StyledDetails>
 	);
 };

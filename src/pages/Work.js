@@ -22,6 +22,9 @@ import projectOneOverview from "../img/project-1-overview.png";
 import projectTwoOverview from "../img/project-2-overview.png";
 import projectThreeOverview from "../img/project-3-overview.png";
 
+// Scroll Top
+import { ScrollTop } from "../components/ScrollTop";
+
 export const Work = () => {
 	const [element, controls] = useScroll();
 	const [element2, controls2] = useScroll();
@@ -67,6 +70,7 @@ export const Work = () => {
 					<img src={projectThreeOverview} alt="project 3" />
 				</Link>
 			</StyledProject>
+			<ScrollTop />
 		</StyledWork>
 	);
 };

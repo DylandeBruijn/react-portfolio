@@ -28,7 +28,7 @@ export const Nav = () => {
 };
 
 const StyledNav = styled.nav`
-	position: fixed;
+	position: sticky;
 	top: 0;
 	width: 100%;
 	min-height: 10vh;
