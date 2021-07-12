@@ -47,6 +47,8 @@ export const AboutSection = () => {
 				<StyledImage>
 					<motion.img
 						variants={photoAnimation}
+						initial="hidden"
+						animate="show"
 						src={homeMain}
 						alt="guy with a camera"
 					/>

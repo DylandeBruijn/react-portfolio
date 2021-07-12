@@ -4,55 +4,56 @@ import styled from "styled-components";
 // UI
 import { StyledSection } from "../styles";
 
+// Framer Motion
+import { AnimateSharedLayout } from "framer-motion";
+
+// Components
+import { Toggle } from "./Toggle";
+
 export const FaqSection = () => {
 	return (
 		<StyledFaq>
 			<h2>
 				Vragen? <span>FAQ</span>
 			</h2>
-			<div className="question">
-				<h4>Vraag 1</h4>
-				<div className="answer">
-					<p>Lorem ipsum dolor sit amet.</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-						ipsam.
-					</p>
-				</div>
-				<div className="faq-line"></div>
-			</div>
-			<div className="question">
-				<h4>Vraag 2</h4>
-				<div className="answer">
-					<p>Lorem ipsum dolor sit amet.</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-						ipsam.
-					</p>
-				</div>
-				<div className="faq-line"></div>
-			</div>
-			<div className="question">
-				<h4>Vraag 3</h4>
-				<div className="answer">
-					<p>Lorem ipsum dolor sit amet.</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-						ipsam.
-					</p>
-				</div>
-			</div>
-			<div className="question">
-				<h4>Vraag 4</h4>
-				<div className="answer">
-					<p>Lorem ipsum dolor sit amet.</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-						ipsam.
-					</p>
-				</div>
-				<div className="faq-line"></div>
-			</div>
+			<AnimateSharedLayout>
+				<Toggle title="Vraag 1">
+					<div className="answer">
+						<p>Lorem ipsum dolor sit amet.</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+							ipsam.
+						</p>
+					</div>
+				</Toggle>
+				<Toggle title="Vraag 2">
+					<div className="answer">
+						<p>Lorem ipsum dolor sit amet.</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+							ipsam.
+						</p>
+					</div>
+				</Toggle>
+				<Toggle title="Vraag 3">
+					<div className="answer">
+						<p>Lorem ipsum dolor sit amet.</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+							ipsam.
+						</p>
+					</div>
+				</Toggle>
+				<Toggle title="Vraag 4">
+					<div className="answer">
+						<p>Lorem ipsum dolor sit amet.</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+							ipsam.
+						</p>
+					</div>
+				</Toggle>
+			</AnimateSharedLayout>
 		</StyledFaq>
 	);
 };
