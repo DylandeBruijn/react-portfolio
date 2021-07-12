@@ -28,6 +28,9 @@ export const Nav = () => {
 };
 
 const StyledNav = styled.nav`
+	position: fixed;
+	top: 0;
+	width: 100%;
 	min-height: 10vh;
 	display: flex;
 	margin: auto;
@@ -35,6 +38,7 @@ const StyledNav = styled.nav`
 	align-items: center;
 	padding: 1rem 10rem;
 	background-color: #282828;
+	z-index: 999;
 	a {
 		color: white;
 		text-decoration: none;

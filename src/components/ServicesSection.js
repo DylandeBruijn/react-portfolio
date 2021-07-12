@@ -10,12 +10,22 @@ import homeSecondary from "../img/home-secondary.png";
 // Styled Components
 import styled from "styled-components";
 
+// Framer Motion
+import { scrollReveal } from "../animation";
+import { useScroll } from "./useScroll";
+
 // UI
 import { StyledSection, StyledDescription, StyledImage } from "../styles";
 
 export const ServicesSection = () => {
+	const [element, controls] = useScroll();
 	return (
-		<StyledServices>
+		<StyledServices
+			variants={scrollReveal}
+			animate={controls}
+			ref={element}
+			initial="hidden"
+		>
 			<StyledDescription>
 				<StyledCards>
 					<StyledCard>

@@ -1,5 +1,5 @@
 // React
-import { useState, useEffect } from "react-dom";
+import React, { useState, useEffect } from "react";
 
 // React Router
 import { useHistory } from "react-router";
@@ -22,9 +22,7 @@ export const ProjectDetail = () => {
 
 	// UseEffect
 	useEffect(() => {
-		const currentProject = projects.filter(
-			(stateProject) => stateProject.url === url
-		);
+		const currentProject = projects.filter((project) => project.url === url);
 		setProject(currentProject[0]);
 	}, [projects, url]);
 	return (

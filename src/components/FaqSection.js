@@ -6,13 +6,21 @@ import { StyledSection } from "../styles";
 
 // Framer Motion
 import { AnimateSharedLayout } from "framer-motion";
+import { scrollReveal } from "../animation";
+import { useScroll } from "./useScroll";
 
 // Components
 import { Toggle } from "./Toggle";
 
 export const FaqSection = () => {
+	const [element, controls] = useScroll();
 	return (
-		<StyledFaq>
+		<StyledFaq
+			variants={scrollReveal}
+			ref={element}
+			animate={controls}
+			initial="hidden"
+		>
 			<h2>
 				Vragen? <span>FAQ</span>
 			</h2>

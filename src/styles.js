@@ -1,8 +1,12 @@
+// Styled Components
 import styled from "styled-components";
+
+// Framer Motion
+import { motion } from "framer-motion";
 
 // AboutSection
 
-export const StyledSection = styled.div`
+export const StyledSection = styled(motion.div)`
 	min-height: 90vh;
 	display: flex;
 	align-items: center;
